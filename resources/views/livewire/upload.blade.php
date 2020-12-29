@@ -1,9 +1,13 @@
 <div>
     <h1>Upload with Livewire</h1>
 
-    <form>
-        <input type="file">
+    <form wire:submit.prevent="upload">
+        <input type="file" wire:model="newFile">
         <button type="submit">Enviar</button>
+
+        @if($errors->has('newFile'))
+            <p class="error">{{ $errors->first('newFile') }}</p>
+        @endif
     </form>
 
     <div class="files">

@@ -19,7 +19,7 @@ h1 {
 }
 
 form {
-    background-color: #c2c2c2;
+    background-color: #e6e6e6;
     padding: 2rem;
 }
 
@@ -39,4 +39,9 @@ form {
 .filename {
     flex: 1;
     margin-left: 1rem;
+}
+
+.error {
+    color: red;
+    margin-top: 0.5rem;
 }
